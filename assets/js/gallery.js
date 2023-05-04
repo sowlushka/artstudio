@@ -47,7 +47,7 @@ for (i = 0; i < links.length; ++i)
 function DownloadURL(url) {
     var oRequest = new XMLHttpRequest();
     oRequest.open('GET', url, false);
-    oRequest.send(null);
+    oRequest.send;
 
     return oRequest.responseText;
 };
