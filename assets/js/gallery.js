@@ -2,13 +2,10 @@
 
 
 var linksURL = "..\/..\/links.txt";
-var templateURL = "..\/..\/template.txt";
 var txt = DownloadURL(linksURL);//Считываем ссылки на сайты с изображениями
 var links = txt.split('\r\n');
 
 var imgStartLink = "https://img2.rudalle.ru/images/";// Стартовая часть линков на изображения
-
-var template = DownloadURL(templateURL);
 var galleryContent;
 
 //var arrXHR = new Array(links.length);
@@ -47,7 +44,7 @@ for (i = 0; i < links.length; ++i)
 function DownloadURL(url) {
     var oRequest = new XMLHttpRequest();
     oRequest.open('GET', url, false);
-    oRequest.send;
+    oRequest.send();
 
     return oRequest.responseText;
 };
