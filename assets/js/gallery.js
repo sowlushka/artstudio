@@ -1,7 +1,7 @@
 /*Генератор изображений для галереи слайдера по ссылкам */
 
 
-var linksURL = "..\/..\/links.txt";
+var linksURL = "links.txt";
 var txt = DownloadURL(linksURL);//Считываем ссылки на сайты с изображениями
 var links = txt.split('\r\n');
 
