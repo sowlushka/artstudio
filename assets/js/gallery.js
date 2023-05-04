@@ -12,7 +12,8 @@ var template = DownloadURL(templateURL);
 var galleryContent;
 
 //var arrXHR = new Array(links.length);
-var imgLink = new Array(links.length);
+var imgLink = new Array(links.length);//Массив изображений
+var galeryItem=new Array(links.length);//Массив элементов слайдера
 for (i = 0; i < links.length; ++i)
 //В цикле создаём массив объектов для асинхронной загрузки линков
 {
