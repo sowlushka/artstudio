@@ -18,7 +18,7 @@ for (i = 0; i < links.length; ++i)
     //Заполняю галерею по мере получения информации о линках на изображения
     //galleryTemplate(links[i], imgLink[i],'Рис.'+i,'');
     let html=document.getElementById('itc-slider__items');
-    html.innerHTML=html.innerHTML.replace('<!--{items}-->', galleryTemplate(links[i], imgLink[i],'Рис.'+i,''));
+    html.innerHTML+=galleryTemplate(links[i], imgLink[i],'Рис.'+i,'');
 
 
     /*
@@ -77,6 +77,5 @@ function galleryTemplate(link_site, link_img, galleryHeader, galleryText){
             </a>
         </div>
     </div>
-    <!--{items}-->
     `;
 }
