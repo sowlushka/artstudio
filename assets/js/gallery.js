@@ -3,7 +3,7 @@
 
 var linksURL = "links.txt";
 var txt = DownloadURL(linksURL);//Считываем ссылки на сайты с изображениями
-var links = txt.split('\r\n');
+var links = txt.split('\n');
 
 var imgStartLink = "https://img2.rudalle.ru/images/";// Стартовая часть линков на изображения
 var galleryContent;
